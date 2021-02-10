@@ -1,0 +1,15 @@
+.app {
+  max-width: 80rem;
+}
+
+.topMenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  margin-right: 1em;
+}
