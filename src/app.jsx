@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Login from './components/login/login';
 import Dashboard from './components/dashboard/dashboard';
+import Notice from './components/notice/notice';
 import styles from "./app.module.css";
 
 const App = () => (
@@ -20,6 +21,9 @@ const App = () => (
           <li>
             <Link to="/login">Login</Link>
           </li>
+          <li>
+            <Link to="/notice">notice</Link>
+          </li>
         </ul>
       </nav>
 
@@ -28,6 +32,9 @@ const App = () => (
       <Switch>
         <Route path="/login">
           <Login />
+        </Route>
+        <Route path="/notice">
+          <Notice />
         </Route>
         <Route path="/">
           <Dashboard />
